@@ -1,0 +1,54 @@
+.screen {
+
+}
+
+.screen-border {
+    background-color: var(--white);
+    border-radius: .5rem;
+    padding: 1.5rem;
+    padding-block-end: 2.75rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 2rem 100%, 0 calc(100% - 2.75rem));
+    position: relative;
+}
+
+.screen-safeArea {
+    padding: 1rem;
+    background-color: #8DB9DC;
+    border-radius: .25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    block-size: 10rem;
+    box-sizing: border-box;
+    background-size: cover;
+    position: relative;
+}
+
+.screen-border::after {
+    content: url('../images/button-menu.png');
+    position: absolute;    
+    inset-block-end: .5rem;
+    inset-inline-end: 1.5rem;
+}
+
+.screen-safeArea::before {
+    content: '';
+    inline-size: 1rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: absolute;
+    inset-block-end: -1.75rem;
+    margin-inline-start: -2rem;
+    background-color: var(--primary);
+}
+
+.screen-safeArea::after {
+    content: '';
+    inline-size: 1rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: absolute;
+    inset-block-end: -1.75rem;
+    margin-inline-start: 2rem;
+    background-color: var(--primary);
+}
