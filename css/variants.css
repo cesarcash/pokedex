@@ -1,0 +1,44 @@
+.variants {
+    grid-area: variants;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button {
+    cursor: pointer;
+    border: none;
+}
+
+.button:nth-of-type(2){
+    margin-inline-end: 1.625rem;
+}
+
+.button-circle {
+    inline-size: 3rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    box-shadow: .125rem .125rem 0 #300F16;
+    margin-inline-end: 2.125rem;
+    border: 1px solid var(--black);
+}
+
+.button:active {
+    transform: scale(.95);
+}
+
+.button-small {
+    inline-size: 1.875rem;
+    block-size: .5rem;
+    border-radius: .5rem;
+}
+
+.is-yellow {
+    background-color: #FECB2F;
+    box-shadow: 1px 1px 0 #D2AB33;
+}
+
+.is-blue {
+    background-color: var(--secondary);
+    box-shadow: 1px 1px 0 #300F16;
+}
